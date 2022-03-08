@@ -1,118 +1,9 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Billy Burger</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-        <link rel="stylesheet" href="/css/app.css">
-    </head>
-    <body>
-        <section id="welcome">
-    <div class="welcome-menu">
-      <div class="logo">
-        <img src="/img/clipart-restaurant-restaurant-logo-5.png">
-      </div>
-      <div class="menu">
-        <div class="menu-title">
-          Menu
-        </div>
-        <ul class="links">
-          <li>
-            <a href="#">Menu</a>
-          </li>
-          <li>
-            <a href="#">Waitlist</a>
-          </li>
-          <li>
-            <a href="#">Offers</a>
-          </li>
-          <li>
-            <a href="#">Giftcards</a>
-          </li>
-        </ul>
-      </div>
-      <div class="social-icons">
-        <a href="#">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-        </a>
-        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      </div>
-      <div class="location">
-        <div class="address">
-          234 Main st,<br>
-          New York, New York 11747
-        </div>
-        <div class="phone-number">
-          <a href="tel:7182198652">718-219-8652</a>
-        </div>
-      </div>
-    </div>
-    <div class="welcome-jumbo">
-      <div class="status">NEW</div>
-      <h1>Billy Burger</h1>
-      <img src="/img/hamburger-and-fries-png-4.png" class="burger-fries">
-    </div>
-  </section>
-  <section id="information">
+@extends('layouts/landing')
+ 
+ 
+@section('content')
+    
+   <section id="information">
     <div class="restaurant-image">
       <img src="img/top-down.jpg">
     </div>
@@ -258,7 +149,7 @@
               </p>
               <div class="food-image">
                 <img
-                  src="https://pngriver.com/wp-content/uploads/2018/04/Download-Cupcake-PNG-Transparent-Image-420x190.png">
+                  src="/img/cupcake.png">
               </div>
             </div>
           </div>
@@ -276,7 +167,7 @@
               </p>
               <div class="food-image">
                 <img
-                  src="https://pngriver.com/wp-content/uploads/2018/04/Download-Cupcake-PNG-Transparent-Image-420x190.png">
+                  src="/img/cupcake.png">
               </div>
             </div>
           </div>
@@ -285,5 +176,4 @@
     </div>
 
   </section>
-    </body>
-</html>
+@endsection
