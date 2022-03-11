@@ -69,8 +69,11 @@
     <body>
         <section id="app-layout">
           @include('includes/side-menu')
-    @yield('content')
+          <section id="content-section">
+             @yield('content')
+          </section>
+   
   </section>
-  
+</section>
     </body>
 </html>
