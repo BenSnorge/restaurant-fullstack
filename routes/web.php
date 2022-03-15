@@ -32,6 +32,11 @@ Route::get('/admin/food-categories/create', 'admin\FoodCategoriesController@crea
 Route::get('/admin/food-categories/{id}/edit', 'admin\FoodCategoriesController@edit');
 
 
+// ADMIN FOOD CATEGORIES
+Route::get('/admin/food-items', 'admin\FoodItemsController@index');
+Route::get('/admin/food-items/create', 'admin\FoodItemsController@create');
+Route::get('/admin/food-items/{id}/edit', 'admin\FoodItemsController@edit');
+
 // ADMIN AUTHENTICATION
 Route::get('/admin/register', function () {
     return view('admin/register');
