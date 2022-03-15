@@ -16,49 +16,12 @@
               class="badge badge-success">6</span></a>
           <div id="submenu-1" class="collapse submenu" style="">
             <ul class="nav flex-column">
+              
+              
               <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-2"
-                  aria-controls="submenu-1-2">E-Commerce</a>
-                <div id="submenu-1-2" class="collapse submenu" style="">
-                  <ul class="nav flex-column">
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">E Commerce Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="ecommerce-product.html">Product List</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="ecommerce-product-single.html">Product Single</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="ecommerce-product-checkout.html">Product Checkout</a>
-                    </li>
-                  </ul>
-                </div>
+                <a class="nav-link" href="/admin">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="dashboard-finance.html">Finance</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="dashboard-sales.html">Sales</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-1"
-                  aria-controls="submenu-1-1">Infulencer</a>
-                <div id="submenu-1-1" class="collapse submenu" style="">
-                  <ul class="nav flex-column">
-                    <li class="nav-item">
-                      <a class="nav-link" href="dashboard-influencer.html">Influencer</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="influencer-finder.html">Influencer Finder</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="influencer-profile.html">Influencer Profile</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
+              
             </ul>
           </div>
         </li>
@@ -68,7 +31,49 @@
           <div id="submenu-2" class="collapse submenu" style="">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link" href="pages/cards.html">Cards <span class="badge badge-secondary">New</span></a>
+                <a class="nav-link" href="pages/cards.html">Food Categories <span class="badge badge-secondary">New</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/cards.html">Food Items <span class="badge badge-secondary">New</span></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3"
+            aria-controls="submenu-3"><i class="fa fa-fw fa-rocket"></i>Customers</a>
+          <div id="submenu-3" class="collapse submenu" style="">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="pages/cards.html">Notification Members<span class="badge badge-secondary">New</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/cards.html">Reservations<span class="badge badge-secondary">New</span></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4"
+            aria-controls="submenu-4"><i class="fa fa-fw fa-rocket"></i>Users</a>
+          <div id="submenu-4" class="collapse submenu" style="">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="/admin/users">All Users<span class="badge badge-secondary">New</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/admin/users/create">Create User<span class="badge badge-secondary">New</span></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5"
+            aria-controls="submenu-5"><i class="fa fa-fw fa-rocket"></i>Settings</a>
+          <div id="submenu-5" class="collapse submenu" style="">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="pages/cards.html">General Settings<span class="badge badge-secondary">New</span></a>
               </li>
             </ul>
           </div>
