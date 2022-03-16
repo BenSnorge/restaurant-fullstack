@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\StaticPagesController;
 use Illuminate\Support\Facades\Route;
-use phpDocumentor\Reflection\Types\Static_;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,3 +53,7 @@ Route::get('/admin/register', function () {
 Route::get('/admin/login', function () {
     return view('admin/login');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
