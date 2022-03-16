@@ -18,7 +18,7 @@ use phpDocumentor\Reflection\Types\Static_;
 Route::get('/', 'StaticPagesController@home');
 Route::get('/menu', 'StaticPagesController@menu');
 Route::get('/menu/{slug}', 'StaticPagesController@singleMenu');
-Route::get('/waitlist', 'StaticPagesController@waitlist');
+Route::get('/reservation', 'StaticPagesController@reservation');
 Route::get('/contact', 'StaticPagesController@contact');
 Route::get('/about', 'StaticPagesController@about');
 Route::get('/offers', 'StaticPagesController@offers');
@@ -32,10 +32,14 @@ Route::get('/admin/food-categories/create', 'admin\FoodCategoriesController@crea
 Route::get('/admin/food-categories/{id}/edit', 'admin\FoodCategoriesController@edit');
 
 
-// ADMIN FOOD CATEGORIES
+// ADMIN FOOD ITEMS
 Route::get('/admin/food-items', 'admin\FoodItemsController@index');
 Route::get('/admin/food-items/create', 'admin\FoodItemsController@create');
 Route::get('/admin/food-items/{id}/edit', 'admin\FoodItemsController@edit');
+
+// ADMIN Customers
+Route::get('/admin/offers-members', 'admin\CustomersController@allOffersMembers');
+Route::get('/admin/reservations', 'admin\CustomersController@allReservations');
 
 // ADMIN AUTHENTICATION
 Route::get('/admin/register', function () {

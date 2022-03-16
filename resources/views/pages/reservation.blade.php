@@ -2,7 +2,7 @@
  
  
 @section('content')
-      <div id="waitlist-page">
+      <div id="reservation-page">
         
 
        
@@ -11,6 +11,14 @@
             <div class="col-md-6">
           <h1>Get On The List</h1>
           <form>
+            <div class="form-group">
+              <label for="firstnameinput">First Name</label>
+              <input type="text" name="fname" class="form-control" id="firstnameinput" placeholder="Billy">
+            </div>
+            <div class="form-group">
+              <label for="lastnameinput">Last Name</label>
+              <input type="text" name="lname" class="form-control" id="lastnameinput" placeholder="Rodriguez">
+            </div>
             <div class="form-group">
               <label for="emailinput">Email address</label>
               <input type="email" class="form-control" name="email" id="emailinput" placeholder="name@example.com">

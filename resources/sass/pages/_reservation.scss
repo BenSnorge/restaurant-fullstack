@@ -1,4 +1,4 @@
-#waitlist-page {
+#reservation-page {
     padding: 100px;
     h1 {
         font-size: 3rem;
@@ -13,40 +13,39 @@
         font-weight: 500;
     }
     form {
-      .form-group {
-        label {
-          font-weight: 700;
-          margin-bottom: 10px;
-          color: black;
+        .form-group {
+            label {
+                font-weight: 700;
+                margin-bottom: 10px;
+                color: black;
+            }
+            .form-control {
+                padding: 10px !important;
+                border: 2px solid #9c1b24;
+                font-size: 1.3rem;
+                box-sizing: border-box;
+                height: auto;
+            }
+            button[type="submit"] {
+                background: #9c1b24;
+                border: #9c1b24;
+                padding: 20px 40px;
+            }
         }
-        .form-control {
-        padding: 10px !important;
-        border: 2px solid #9c1b24;
-        font-size: 1.3rem;
-        box-sizing: border-box;
-        height: auto;
-        }
-        button[type="submit"] {
-          background: #9c1b24;
-          border: #9c1b24;
-          padding: 20px 40px;
-        }
-      }
-      
     }
 }
 @media (min-width: 0px) and (max-width: 767px) {
-    #waitlist-page {
+    #reservation-page {
         padding: 20px;
     }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991px) {
-    #waitlist-page {
+    #reservation-page {
         padding: 20px;
         h1 {
-          font-size: 2rem;
+            font-size: 2rem;
         }
     }
 }
