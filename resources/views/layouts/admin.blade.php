@@ -153,6 +153,7 @@
                                 aria-labelledby="navbarDropdownMenuLink2">
                                 <div class="nav-user-info">
                                     <h5 class="mb-0 text-white nav-user-name">
+                                        
                                         @guest
                                         No User name
                                         @else
@@ -167,13 +168,37 @@
                                 document.getElementById('logout-form').submit();">
                                     <i class="fas fa-power-off mr-2"></i>Logout
                                 </a>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                    style="display: none;">
-                                    @csrf
-                                </form>
+                                {{-- <a class="dropdown-item" href="{{ route('logout') }}" >
+                                {{ __('Logout') }}
+                            </a> --}}
 
-
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
                                 {{-- @guest
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        </li>
+                        @if (Route::has('register'))
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                        </li>
+                        @endif
+                        @else
+                       
+                        @endguest
+ --}}
+
+
+
+
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+
+
+                        {{-- @guest
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                         </li>
@@ -218,6 +243,7 @@
             {{ session('status') }}
         </div>
         @endif
+        
         @yield('content')
         <!-- ============================================================== -->
         <!-- footer -->
