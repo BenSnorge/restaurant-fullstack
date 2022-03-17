@@ -1,26 +1,29 @@
-@extends('layouts/app')
- 
- 
-@section('content')
-      <div id="about-page">
-        
+@extends('layouts.app')
 
-       
-        <div class="content-box">
-          <div class="row">
-            <div class="col-md-6">
-          <h1>About Page</h1>
-          <p>I'm baby everyday carry vaporware cray, truffaut slow-carb 90's seitan pickled kogi heirloom PBR&B retro. Vegan viral occupy, hoodie unicorn cred man bun plaid beard. 3 wolf moon raclette 90's knausgaard, butcher put a bird on it slow-carb cronut pickled hoodie pok pok. Lumbersexual etsy authentic organic paleo, farm-to-table palo santo hammock banh mi bespoke blue bottle shabby chic fanny pack YOLO cliche.</p>
-          <p>I'm baby everyday carry vaporware cray, truffaut slow-carb 90's seitan pickled kogi heirloom PBR&B retro. Vegan viral occupy, hoodie unicorn cred man bun plaid beard. 3 wolf moon raclette 90's knausgaard, butcher put a bird on it slow-carb cronut pickled hoodie pok pok. Lumbersexual etsy authentic organic paleo, farm-to-table palo santo hammock banh mi bespoke blue bottle shabby chic fanny pack YOLO cliche.</p>
+@section('title')
+{{-- About - {{$settings["general"]->site_title}}  --}}
+@endsection
+
+
+
+@section('content')
+    <div id="about-page">
+      
+      <div class="content-box">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>About Page</h1>
+            <p>
+              Lorem ipsum dolor amet tote bag occupy taxidermy banh mi ramps snackwave single-origin coffee microdosing. Snackwave selvage palo santo small batch stumptown hoodie single-origin coffee man braid cloud bread vegan semiotics knausgaard lo-fi. Paleo etsy subway tile, fam umami chartreuse tumeric iPhone. Mustache freegan shaman, photo booth bicycle rights cronut occupy hexagon chillwave taxidermy you probably haven't heard of them swag irony messenger bag schlitz. Hammock farm-to-table ennui asymmetrical blog master cleanse, church-key chillwave. Messenger bag everyday carry swag, mumblecore normcore activated charcoal lomo organic shaman chillwave synth.
+            </p>
+            <p>
+              Lorem ipsum dolor amet tote bag occupy taxidermy banh mi ramps snackwave single-origin coffee microdosing. Snackwave selvage palo santo small batch stumptown hoodie single-origin coffee man braid cloud bread vegan semiotics knausgaard lo-fi. Paleo etsy subway tile, fam umami chartreuse tumeric iPhone. Mustache freegan shaman, photo booth bicycle rights cronut occupy hexagon chillwave taxidermy you probably haven't heard of them swag irony messenger bag schlitz. Hammock farm-to-table ennui asymmetrical blog master cleanse, church-key chillwave. Messenger bag everyday carry swag, mumblecore normcore activated charcoal lomo organic shaman chillwave synth.
+            </p>
           </div>
           <div class="col-md-6">
-            <img class="img-fluid" src="/img/about-page-image.jpeg" alt="">
+            <img src="/img/about-page-image.jpeg" class="img-fluid">
           </div>
-          </div>
-          
         </div>
-        
       </div>
-      
-    
+    </div>
 @endsection

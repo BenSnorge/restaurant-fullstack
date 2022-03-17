@@ -16,7 +16,6 @@
     body {
         height: 100%;
     }
-
     body {
         display: -ms-flexbox;
         display: flex;
