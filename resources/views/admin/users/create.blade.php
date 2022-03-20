@@ -30,7 +30,7 @@
     <div class="card">
       <h5 class="card-header">Create A New User</h5>
       <div class="card-body">
-       <form method="POST" action="/admin/users">
+      <form method="POST" action="/admin/users">
         @csrf
           <div class="form-group">
             <label for="inputfirstname">First Name</label>
@@ -98,7 +98,7 @@
               </p>
             </div>
           </div>
-        </form>
+      </form>
       </div>
     </div>
   </div>
