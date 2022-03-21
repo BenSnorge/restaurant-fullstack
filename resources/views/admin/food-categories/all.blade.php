@@ -33,26 +33,39 @@
                 <div class="card">
                     <h5 class="card-header">All Food Categories</h5>
                     <div class="card-body">
-          <table class="table">
-              <thead>
-                  <tr>
-                      <th scope="col">Id</th>
-                      <th scope="col">Title</th>
-                      <th scope="col">Date Created</th>
-                      <th scope="col">Edit</th>
-                      <th scope="col">Delete</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <th scope="row">1</th>
-                      <td>Burgers</td>
-                      <td>2/2/2020</td>
-                      <td><a href="/admin/food-categories/1/edit"><i class="far fa-edit"></i></a></td>
-                      <td><a href="/admin/food-categories/1/delete" onclick="if(! confirm('Are you sure you want to delete category?')) { return false; }"><i class="far fa-trash-alt"></a></i></td>
-                  </tr>
-              </tbody>
-          </table>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Date Created</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($categories as $category)
+                    <tr>
+                    <th scope="row">{{ $category->id }}</th>
+                    <td>{{ $category->title }}</td>
+                    <td>{{ date('m/d/Y', strtotime($category->updated_at)) }}</td>
+                    <td><a href="/admin/food-categories/{{ $category->id }}/edit"><i class="far fa-edit"></i></a></td>
+                    <td>{{-- <a href="/admin/users/{{ $category->id }}/delete" onclick="if(! confirm('Are you sure you want to delete category?')) { return false; }"><i class="far fa-trash-alt"></a></i> --}}
+
+                        <a class="" href="#" onclick="event.preventDefault();
+                                document.getElementById('delete-user{{ $category->id }}').submit();"><i class="far fa-trash-alt">
+                                    </i>
+                                </a>
+                            <form id="delete-user{{ $category->id }}" action="/admin/food-categories/{{ $category->id }}/delete" method="POST" class="d-none">
+                                @method('DELETE')
+                                @csrf
+                            </form>
+                    </td>
+                </tr>
+                @endforeach
+                
+            </tbody>
+        </table>
                     </div>
                 </div>
             </div>

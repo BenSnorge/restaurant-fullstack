@@ -29,7 +29,10 @@ Route::get('/admin', 'admin\AdminController@dashboard');
 // ADMIN FOOD CATEGORIES
 Route::get('/admin/food-categories', 'admin\FoodCategoriesController@index');
 Route::get('/admin/food-categories/create', 'admin\FoodCategoriesController@create');
+Route::post('/admin/food-categories', 'admin\FoodCategoriesController@store');
 Route::get('/admin/food-categories/{id}/edit', 'admin\FoodCategoriesController@edit');
+Route::put('/admin/food-categories/{id}', 'admin\FoodCategoriesController@update');
+Route::delete('/admin/food-categories/{id}/delete', 'admin\FoodCategoriesController@delete');
 
 
 // ADMIN FOOD ITEMS
