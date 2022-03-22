@@ -39,6 +39,7 @@ class MemberController extends Controller
         $member->image_url = request('image_url');
         $member->save();
 
+        return "Thank You";
         return redirect('/admin/food-members');
     }
     public function edit($id)
