@@ -28,7 +28,7 @@
               <div class="col-md-6">
               <div class="form-group">
               <label for="inputlname">Last Name</label>
-              <input id="inputfname" type="text" class="form-control form-control-lg @error('lname') is-invalid @enderror" name="lname" value="{{ old('lname') }}" required autocomplete="lname" autofocus placeholder="Doe">
+              <input id="inputlname" type="text" class="form-control form-control-lg @error('lname') is-invalid @enderror" name="lname" value="{{ old('lname') }}" required autocomplete="lname" autofocus placeholder="Doe">
 
                 @error('lname')
                     <span class="invalid-feedback" role="alert">
@@ -42,8 +42,7 @@
               <div class="col-md-6">
                 <div class="form-group">
               <label for="inputemail">Email address</label>
-              <label for="inputemail">Last Name</label>
-              <input id="inputfname" type="email" class="form-control form-control-lg @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="john@gmail.com">
+              <input id="inputemail" type="email" class="form-control form-control-lg @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="john@gmail.com">
 
                 @error('email')
                     <span class="invalid-feedback" role="alert">
@@ -55,7 +54,6 @@
               <div class="col-md-6">
               <div class="form-group">
               <label for="inputphone">Phone Number</label>
-              <label for="inputphone">Last Name</label>
               <input id="inputphone" type="tel" class="form-control form-control-lg @error('phone_number') is-invalid @enderror" name="phone_number" value="{{ old('phone_number') }}" required autocomplete="phone_number" autofocus placeholder="234-567-890">
 
                 @error('phone_number')
