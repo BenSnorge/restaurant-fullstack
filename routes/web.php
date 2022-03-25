@@ -66,12 +66,12 @@ Route::delete('/admin/reservations/{id}/delete', 'admin\ReservationController@de
 
 
 /// ADMIN SETTINGS
-Route::get('/admin/settings/general', 'admin\SettingsController@general');
-Route::post('/admin/settings/general', 'admin\SettingsController@saveGeneral');
-Route::get('/admin/settings/seo', 'admin\SettingsController@seo');
-Route::post('/admin/settings/seo', 'admin\SettingsController@saveSeo');
-Route::get('/admin/settings/social', 'admin\SettingsController@social');
-Route::post('/admin/settings/social', 'admin\SettingsController@saveSocial');
+Route::get('/admin/settings/general', 'admin\SettingController@general');
+Route::post('/admin/settings/general', 'admin\SettingController@saveGeneral');
+Route::get('/admin/settings/seo', 'admin\SettingController@seo');
+Route::post('/admin/settings/seo', 'admin\SettingController@saveSeo');
+Route::get('/admin/settings/social', 'admin\SettingController@social');
+Route::post('/admin/settings/social', 'admin\SettingController@saveSocial');
 
 
 
