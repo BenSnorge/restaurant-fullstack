@@ -5,11 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Member;
 use App\Reservation;
+use App\GeneralSetting;
+use App\SocialSetting;
 
 class StaticPagesController extends Controller
 {
     public function home()
     {
+
+
         return view('home');
     }
     public function about()

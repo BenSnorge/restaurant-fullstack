@@ -14,9 +14,9 @@ class SocialSettingSeeder extends Seeder
     public function run()
     {
         DB::table('social_settings')->insert([
-            'facebook_url' => 'www.facebook.com/burgerking',
-            'twitter_url' => 'www.twitter.com/burgerkind',
-            'instagram_url' => 'www.instagram.com/burgerking',
+            'facebook_url' => 'https://www.facebook.com/burgerking/',
+            'twitter_url' => 'https://twitter.com/BurgerKing',
+            'instagram_url' => 'https://www.instagram.com/burgerking',
 
             'updated_at' => Carbon::now(),
             'created_at' => Carbon::now(),
