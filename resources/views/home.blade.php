@@ -1,5 +1,7 @@
 @extends('layouts/landing')
- 
+@section('title')
+    {{ $settings["general"]->site_title }} Americas's Number One Burgers
+@endsection
  
 @section('content')
     

@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('title')
-{{-- About - {{$settings["general"]->site_title}}  --}}
+About - {{$settings["general"]->site_title}} 
 @endsection
+
 
 
 
